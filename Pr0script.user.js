@@ -6,8 +6,8 @@
 // @author       gwz, flummi
 // @match        http://pr0gramm.com/*
 // @match        https://pr0gramm.com/*
-// @updateURL    https://raw.githubusercontent.com/GoldenSpaceCat/Pr0script/raw/master/Pr0script.user.js
-// @downloadURL  https://raw.githubusercontent.com/GoldenSpaceCat/Pr0script/raw/master/Pr0script.user.js
+// @updateURL    https://github.com/GoldenSpaceCat/Pr0script/raw/master/Pr0script.user.js
+// @downloadURL  https://github.com/GoldenSpaceCat/Pr0script/raw/master/Pr0script.user.js
 // @grant        unsafeWindow
 // ==/UserScript==
 
@@ -21,12 +21,6 @@ var css = "\
 .comments .score:before {\
     content: attr(title) \", \";\
 }\
-.item-vote .score {\
-    position: absolute;\
-    font-size: 32%;\
-    top: 50px;\
-    width: 100px;\
-    content: attr(title);\
 .item-vote .score:before {\
     position: absolute;\
     font-size: 32%;\
