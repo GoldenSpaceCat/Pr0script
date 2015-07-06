@@ -1,4 +1,8 @@
 <?
+/*
+ * Version: 0.2
+ */
+
 class pr0 {
 	var $users = [];
 	var $cfg = [
