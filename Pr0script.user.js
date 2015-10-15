@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Pr0script
 // @namespace    https://pr0gramm.com/
-// @version      1.0.3
+// @version      1.0.4
 // @description  benis
 // @author       gwz, flummi
 // @match        http://pr0gramm.com/*
@@ -79,8 +79,9 @@ var Pr0 = function () {
 	this.userList = {};
 	this.userBenisCount = document.createTextNode("...");
 	window[magicName] = this;
-	shouldShow = (localStorage.getItem("showScore") === "true" || ~["gwz","Flummi","Bashor","medokin"].indexOf(window.p.user.name));
+	shouldShow = (localStorage.getItem("showScore") === "true" || ~["gwz","Flummi","Bashor","medokin","fritz111"].indexOf(window.p.user.name));
 	var Item = window.p.View.Stream.Item;
+    var Comments = window.p.View.Stream.Comments;
 	Item.prototype.template = '<?js ' + magicName + '.item(item) ?>' + 
 	Item.prototype.template.replace(/!item.showScore/g, "item._young")
 	.replace(/(item-info..)/g, "$1{item._benisBar}")
@@ -91,6 +92,7 @@ var Pr0 = function () {
 			return this.get(up) + this.get(down);
 		}
 	});*/
+    if (shouldShow) Comments.prototype.template = Comments.prototype.template.replace(/c\.showScore/g, "true")
 	//window.CONFIG.ITEM_SHOW_SCORE_AGE = 0;
 };
 
