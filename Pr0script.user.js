@@ -1,11 +1,10 @@
 // ==UserScript==
 // @name         Pr0script
 // @namespace    https://pr0gramm.com/
-// @version      1.0.4
+// @version      1.0.5
 // @description  benis
 // @author       gwz, flummi
-// @match        http://pr0gramm.com/*
-// @match        https://pr0gramm.com/*
+// @include      /^https?:\/\/pr0gramm\.com\//
 // @updateURL    https://github.com/GoldenSpaceCat/Pr0script/raw/master/Pr0script.user.js
 // @downloadURL  https://github.com/GoldenSpaceCat/Pr0script/raw/master/Pr0script.user.js
 // @icon         http://pr0gramm.com/media/pr0gramm-favicon.png
