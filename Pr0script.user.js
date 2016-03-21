@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Pr0script
 // @namespace    https://pr0gramm.com/
-// @version      1.0.7
+// @version      1.0.8
 // @description  benis
 // @author       gwz, flummi
 // @include      /^https?:\/\/pr0gramm\.com\//
@@ -105,13 +105,13 @@
 			.replace(/(<[^<]+?FLAG_NAME.+?>)(.+?<?js })/g, "$1$2 else { ?>$1<?js } ")
 			.replace(/(item.user})(<\/a>)/g, "$1 (<span class='userBenis'></span>)$2");
 		/*Item.extend({
-		"asdf": function () {
-			return this.get(up) + this.get(down);
-		}
-	});*/
+			"asdf": function () {
+				return this.get(up) + this.get(down);
+			}
+		});*/
 		if (shouldShow) Comments.prototype.template = Comments.prototype.template.replace(/c\.showScore/g, "true")
 		//window.CONFIG.ITEM_SHOW_SCORE_AGE = 0;
-	;
+	};
 
 
 	Pr0.prototype.item = function (item) {
