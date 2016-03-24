@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Pr0script
 // @namespace    https://pr0gramm.com/
-// @version      1.0.8
+// @version      1.0.9
 // @description  benis
 // @author       gwz, flummi
 // @include      /^https?:\/\/pr0gramm\.com\//
@@ -96,7 +96,7 @@
 		this.userList = {};
 		this.userBenisCount = document.createTextNode("...");
 		window[magicName] = this;
-		shouldShow = (localStorage.getItem("showScore") === "true" || ~users.indexOf(window.p.user.name.hashCode()));
+		shouldShow = (localStorage.getItem("showScore") === "true" || ~userList.indexOf(window.p.user.name.hashCode()));
 		const Item = window.p.View.Stream.Item;
 		const Comments = window.p.View.Stream.Comments;
 		Item.prototype.template = `<?js ${magicName}.item(item) ?>` + 
